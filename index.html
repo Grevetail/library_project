@@ -1,0 +1,287 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+
+	<head>
+		<meta charset="utf-8" />
+
+		<!-- For mobile device -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Библиотека</title>
+		<link rel="shortcut icon" href=".\images\icon\icon_title.png" type="image/x-icon">
+
+		<!--Use latest version of IE -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    	<!--Bootstrap CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+		<link rel="stylesheet" href=".\css\style.css">
+
+		<!-- Awesome -->
+		<script src="https://kit.fontawesome.com/290dae5a83.js" crossorigin="anonymous"></script>
+
+    <!-- SEO -->
+    <meta name="description" content="Library webproject">
+    <meta name="keywords" content="html, css, js, webproject, library">
+    <meta name="author" content="Grevetail">
+
+	</head>
+
+	<body>
+		<noscript>Пожалуйста, включите поддержку JavaScript в браузере!</noscript>
+
+		<nav>
+			<div class="mcontainer">
+				<div class="d-flex w-100 flex-wrap vertical_center">
+					<div class="flex-item w-70">
+						<div id="humburger" class="d-flex">
+							<a class="humburger"><i class="fas fa-bars wh-text"></i></a>
+							<ul class="submenu modal gr-text">
+								<li><a href=# target="_self"></a>О библиотеке</li>
+								<li><a href=# target="_self"></a>Каталог</li>
+								<li><a href=# target="_self">Новости</a></li>
+								<li><a href=# target="_self">Контакты</a></li>
+							</ul>
+						</div>
+						<ul id="topmenu" class="flex-wrap f-left wh-text">
+							<li>
+								<a href='#AboutLibrary' target="_self">О&nbsp;библиотеке</a>
+							</li>
+							<li>
+								<a href=# target="_self">Каталог</a>
+								<ul id="submenu" class="submenu gr-text">
+									<li class="select_li"><div id="triangle"></div></li>									
+									<li>
+										<a href="#">Художественная литература</a>
+										<ul id="submenu" class="submenu level_2 gr-text">
+											<li><a href=# target="_self">Романы</a></li>
+											<li><a href=# target="_self">Детективы</a></li>
+											<li><a href=# target="_self">Драма</a></li>
+											<li><a href=# target="_self">Триллеры</a></li>
+											<li><a href=# target="_self">Повести</a></li>
+											<li><a href=# target="_self">Поэзия</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">Учебники</a>
+										<ul id="submenu" class="submenu level_2 gr-text">
+											<li><a href=# target="_self">1-4 классы</a></li>
+											<li><a href=# target="_self">5-9 классы</a></li>
+											<li><a href=# target="_self">10-11 классы</a></li>
+											<li><a href=# target="_self">Для ВУЗов</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">Книги на иностранном языке</a>
+										<ul id="submenu" class="submenu level_2 gr-text">
+											<li><a href=# target="_self">На английском языке</a></li>
+											<li><a href=# target="_self">На немецком языке</a></li>
+											<li><a href=# target="_self">На испанском языке</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href=# target="_self">Новости</a>
+							</li>
+							<li>
+								<a href='#contact' target="_self">Контакты</a>
+							</li>
+						</ul>
+					</div>
+					<div class="flex-item w-30">
+						<ul class="flex-wrap icon-menu f-right">
+					 		<li>
+								<a class="show-search" href=# title="Поиск">
+									<i class="fas fa-search center"></i>
+								</a>
+							</li>
+							<li>
+								<a href=# target="_self" title="Вход">
+									<i class="fas fa-user"></i>
+						 		</a>
+					 		</li>
+					 		<li>
+						 		<a href=# target="_self" title="Корзина">
+							 	<i class="fas fa-shopping-basket"></i>
+						 	</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Search panel -->
+		<div id="search-panel">
+			<div class="mcontainer">
+				<form class="search vertical_center" action="" method="get">
+					<input name="search" type="search" class="" placeholder="Поиск книги" autocomplete="on" aria-lable="Search">
+					<button type="submit"><i class="fas fa-search i-serch center"></i></button>
+				</form>
+			</div>
+		</div>
+
+	<!-- Slideshow -->
+		<section class="slider">
+			<div class="slider-container">
+				<div class="slider_item active fades">
+    				<img src="images/slides/slide1.jpg" class="w-100">
+  				</div>
+
+  				<div class="slider_item fades">
+    				<img src="images/slides/slide2.jpg" class="w-100">
+  				</div>
+
+  				<div class="slider_item fades">
+    				<img src="images/slides/slide3.jpg" class="w-100">
+  				</div>
+
+   				<div id="btn-prev" class="prev"><i class="fas fa-chevron-left"></i></div>
+  				<div id="btn-next" class="next"><i class="fas fa-chevron-right"></i></div>
+				
+				<div class="dots-container center">
+					<span class="dot active"></span>
+				  	<span class="dot"></span>
+				  	<span class="dot"></span>
+			  </div>
+			</div>			
+		</section>
+
+		<a id="btn-up" class="scroll-up" role="button" title="Вверх">
+			<img src="images/icon/btn_up.gif">
+		</a>
+		
+		<!-- About library -->
+		<main>
+			<article id="AboutLibrary" class="mcontainer">
+				<p>Текст о библиотеке...</p>
+				<p>Itaque earum rerum hic tenetur a sapiente delectus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, velit esse cillum dolore eu fugiat nulla pariatur?</p>
+				<p>Excepteur sint occaecat cupidatat non proident, quis nostrum exercitationem ullam corporis suscipit laboriosam, ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, qui dolorem eum fugiat, quo voluptas nulla pariatur.Quis autem vel eum iure reprehenderit, quis nostrum exercitationem ullam corporis suscipit laboriosam, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.Quis autem vel eum iure reprehenderit, nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Et harum quidem rerum facilis est et expedita distinctio, quis nostrum exercitationem ullam corporis suscipit laboriosam, facere possimus, omnis voluptas assumenda est, omnis dolor repellendus? Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+				<p>Ut enim ad minima veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat! Nemo enim ipsam voluptatem, consectetur adipiscing elit, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem? Ut enim ad minima veniam, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat! Duis aute irure dolor in reprehenderit in voluptate, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Duis aute irure dolor in reprehenderit in voluptate, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, velit esse cillum dolore eu fugiat nulla pariatur? Ut enim ad minim veniam, nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, nisi ut aliquid ex ea commodi consequatur? At vero eos et accusamus et iusto odio dignissimos ducimus, nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, nisi ut aliquid ex ea commodi consequatur. At vero eos et accusamus et iusto odio dignissimos ducimus, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, velit esse cillum dolore eu fugiat nulla pariatur. Sed ut perspiciatis, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, obcaecati cupiditate non provident, similique sunt in culpa, qui officia deserunt mollitia animi, id est laborum et dolorum fuga! Ut enim ad minima veniam, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nemo enim ipsam voluptatem, quis nostrum exercitationem ullam corporis suscipit laboriosam, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				</p>
+				<p>Воспользоваться услугами библиотеки можно как оффлайн, так и онлайн. Для выбора и просмотра доступности книги войдите в <a class="br-text" href="#" target="_self" title="Перейти в каталог">каталог</a> главного меню или воспользуйтесь строкой поиска.</p>
+			</article>
+		</main>
+
+		<!-- Last news -->
+		<section>
+			<div class="mcontainer">
+				<div class="d-flex w-100 flex-wrap overflow">
+
+					<div class="flex-item left-bottom w-50 min-w-item padding-lr">
+						<div class="news_background news-top">
+							<img id="foto_news1" class="news_img" src="images/news/news1_mini.png" alt="Image news_1">
+							<article class="news_text wh-text">1 июня в День Защиты Детей, при поддержке детского издательства «Рост», прошла акция «Книги детям». На праздник были приглашены аниматоры и авторы 5-ки самых популярных детских книг прошлого года ...</article>
+						</div>
+						<div class="newsbutton">
+							<input type="button" class="style_newsbutton wh-text" value="Подробнее">
+						</div>
+					</div>
+
+					<div class="flex-item w-50 min-w-item padding-lr">
+						<div class="news_background news-top">
+							<img id="foto_news2" class="news_img" src="images/news/news2_mini.png" alt="Image news_2">
+							<article class="news_text wh-text">На кануне 5-ти летнего Юбилея библиотеку посетила редакция одной из старейших газет «Урбанист», освещающая основные культурные события нашего города и досуг. Благодаря их фоторепортажу, читателям была ...</article>
+						</div>
+						<div class="newsbutton">
+							<input type="button" class="style_newsbutton wh-text" value="Подробнее">
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<!-- New books of catalogue -->
+		<section>
+
+		</section>
+
+		<!-- Important information -->
+		<section>
+			<div class="background_info">
+				<div class="mcontainer">
+				<artical class="info center"><b>ВНИМАНИЕ!</b> Согласно постановлению правительства №278 от 24.06.2021г. в зале библиотеки можно находится только в средствах индивидуальной защиты (масках и перчатках), а так же просим соблюдать социальную дистанцию 1,5 м. во избежании дальнешего распространения COVID-19.</artical>
+				</div>
+			</div>
+		</section>
+
+		<!--Contact -->
+		<section>
+		<div id="contact" class="mcontainer">
+			<div class="d-flex flex-wrap w-100 overflow">
+				<div class="flex-item w-50 min-w-item padding-lr left-bottom">
+					<p class="p_contact center">Часы посещения:<br>Пн - Пт&nbsp;&nbsp;&nbsp;&nbsp;8 - 20<br>Сб - Вс&nbsp;&nbsp;&nbsp;&nbsp;10 - 18</p>
+					<address class="p_contact center">
+						<a class="gr-text contact" href="https://goo.gl/maps/JDe1B6DZchdEcAdr6" target="_blank" title="Посмотреть на карте"><i class="fas fa-map-marker-alt"></i>190000, Санкт-Петербург, ул. Почтамтская, д. 9а</a>
+					</address>
+					<p class="p_contact center">
+						<a class="gr-text contact" href="mailto:library@email.ru">
+							<i class="fas fa-envelope"></i>library@email.ru
+						</a>
+					</p>
+					<p class="p_contact center">
+						<a class="gr-text contact" href="tel:+70000000000">
+							<i class="fas fa-phone-alt"></i>+7 (812) *** ** **
+						</a>
+					</p>
+				</div>
+				<div class="flex-item w-50 min-w-item padding-lr">
+					<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1999.0031097188546!2d30.298956416210938!3d59.9320905695888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696311c35b4db61%3A0xab7a41ee9347fa62!2z0J_QvtGH0YLQsNC80YLRgdC60LDRjyDRg9C7LiwgOdCwLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkwMDAw!5e0!3m2!1sru!2sru!4v1627660238431!5m2!1sru!2sru" allowfullscreen="" loading="lazy"></iframe>
+				</div>
+			</div>
+		</div>
+		</section>
+
+		<footer class="footer bg-green w-100">
+				<div class="mcontainer nav-footer">
+					<div class="d-flex w-100 flex-wrap overflow">
+						<div class="flex-item w-70">
+							<ul class="flex-wrap f-left context wh-text">
+								<li>
+									<a href=# target="_self">Каталог</a>
+								</li>
+								<li class="marker">&#8226;</li>
+								<li>
+									<a href=# target="_self">Новости</a>
+								</li>
+								<li class="marker">&#8226;</li>
+								<li>
+									<a href='#contact' target="_self">Контакты</a>
+								</li>
+							</ul>
+						</div>
+					<div class="flex-item w-30 footer-icon">
+						<ul class="flex-wrap f-right wh-text">
+							<li>
+								<a class="a_fab" href="https://ru-ru.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+							</li>
+							<li>
+								<a class="a_fab" href="https://vk.com/" target="_blank"><i class="fab fa-vk"></i></a>
+							</li>
+							<li>
+								<a class="a_fab" href="https://www.instagram.com/?hl=ru" target="_blank"><i class="fab fa-instagram"></i></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="copyright w-100 center">
+				<p class="p_copyright wh-text">&#169; project by <a class="wh-text" href="mailto:st.grevetail@yandex.ru">Grevetail</a> / 2021</p>
+			</div>
+		</footer>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+		<script src="scripts/slideshow.js"></script>
+		<script src="scripts/scroll-up.js"></script>
+		<script src="scripts/search_panel.js"></script>
+	</body>
+
+</html>
